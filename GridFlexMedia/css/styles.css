@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cajaPrincipal {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "caja1"
+    "caja2"
+    "caja3"
+    "caja4"
+    "caja5"
+    "caja6";
+}
+#caja1 {
+  grid-area: caja1;
+  background: blue;
+}
+
+#caja2 {
+  grid-area: caja2;
+  background-color: rebeccapurple;
+  display: flex;
+  flex-direction: row;
+}
+.caja_mini {
+  width: 25%;
+  height: 100%;
+}
+#cajaA {
+  grid-area: cajaA;
+  background: rgb(22, 84, 200);
+}
+#cajaB {
+  grid-area: cajaB;
+  background: rgb(80, 140, 244);
+}
+#cajaC {
+  grid-area: cajaC;
+  background: rgb(6, 8, 9);
+}
+#cajaD {
+  grid-area: cajaD;
+  background: rgb(11, 59, 143);
+}
+#caja3 {
+  grid-area: caja3;
+  background: red;
+}
+#caja4 {
+  grid-area: caja4;
+  background: blue;
+}
+#caja5 {
+  grid-area: caja5;
+  background: rgb(44, 195, 74);
+}
+#caja6 {
+  grid-area: caja6;
+  background: red;
+}
+@media (max-width: 480px) {
+  #caja2 {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .caja_mini {
+    width: 100%;
+    height: 25%;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  #caja2 {
+    grid-area: caja2;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .caja_mini {
+    width: 50%;
+    height: 50%;
+  }
+}

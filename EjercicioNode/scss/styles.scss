@@ -1,0 +1,15 @@
+$rojoUniversidad: rgb(224,38,38);
+body{
+    background-color: $rojoUniversidad;
+}
+
+ul{
+    list-style: none;
+    li{
+        display: inline-block;
+        a{
+            text-decoration: none;
+            color: $rojoUniversidad;
+        }
+    }
+}

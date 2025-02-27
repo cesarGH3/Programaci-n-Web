@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p {
+    color: red;
+    /*background-color: purple !important;*/
+}
+.arriba{
+     background-color: yellow;
+}
+.abajo{
+    background-color: greenyellow;
+}
+#unico{
+    background-color: blue;
+}
+#foto-personal{
+    width: 100%;
+    margin: 30px;
+    border: solid red;
+    padding: 30px;
+}
+.boton{
+    border: outset;
+    background-color: gray;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    border-width: 3px;
+}

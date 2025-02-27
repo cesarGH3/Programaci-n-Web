@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 100vw;
+    min-height: 100vh; /* Se ajusta sin cortar elementos */
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "caja2 caja2 caja1 caja1 caja1 caja1"
+    "caja2 caja2 caja3 caja3 caja5 caja5"
+    "caja2 caja2 caja4 caja4 caja5 caja5"
+    "caja2 caja2 caja6 caja6 caja6 caja6";
+    /* gap: 0px;  Agrega espacio entre los elementos del grid */
+}
+#caja1, #caja2, #caja3, #caja4, #caja5, #caja6 {
+    width: 100%;  /* Ocupar toda la celda */
+    height: 100%;
+    /* border: none; Elimina bordes si causan separación */
+    border : 2px solid black;
+}
+
+#caja1{
+    grid-area: caja1;
+    background-color: rebeccapurple;
+    /* margin: 15px; */
+}
+#caja2{
+    grid-area: caja2;
+    background-color: yellow;
+} 
+#caja3{
+    grid-area: caja3;
+    background-color: yellowgreen;
+} 
+#caja4{
+    grid-area: caja4;
+    background-color: rgb(106, 210, 251);
+}
+#caja5{
+    grid-area: caja5;
+    background-color: rgb(248, 72, 56);
+}
+#caja6{
+    grid-area: caja6;
+    background-color: rgb(231, 56, 222);
+}
+@media(max-width: 580px){
+    .contenedor{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        grid-template-areas: 
+        "caja1"
+        "caja2"
+        "caja3"
+        "caja4"
+        "caja5"
+        "caja6";
+    }
+  
+
+}
+@media(min-width: 581px) and (max-width: 1024px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "caja1 caja1 caja1 caja2"
+        "caja3 caja3 caja3 caja3"
+        "caja4 caja4 caja4 caja4"
+        "caja5 caja5 caja6 caja6";
+    }
+}

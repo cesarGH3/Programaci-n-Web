@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#contenedor{
+    background-color: red;
+    width: 100vw;
+    height: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    "header header header"
+    "news news2 aside"
+    "footer footer aside" ;
+}
+aside{
+    grid-area: aside;
+    background-color: blue;
+}
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+    background-color: rebeccapurple;
+}
+#news{
+    grid-area: news;
+    background-color: yellow;
+}
+#news2{
+    grid-area: news2;
+    background-color: white;
+}

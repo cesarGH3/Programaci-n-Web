@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+#cajaA{
+    width: 100%;
+    height: 30%;
+    background-color:greenyellow;
+}
+#cajaB{
+    width: 100%;
+    height: 70%;
+    background-color: rgb(246, 255, 0);
+}
+#cajaC{
+    width: 70%;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+#cajaD{
+    width: 100%;
+    height: 50%;
+    background-color: rebeccapurple;
+}
+#cajaE{
+    width: 100%;
+    height: 50%;
+    background-color: cyan;
+}
+#cajaF{
+    width: 50%;
+    height: 100%;
+    background-color: palevioletred;
+}
+
+
+

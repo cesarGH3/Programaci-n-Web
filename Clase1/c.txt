@@ -1,0 +1,2 @@
+ctrl + k + c comenta en html css y javascript
+ctrl + k + u descomenta en html css y javascript
