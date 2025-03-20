@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  background-color: rebeccapurple;
+  width: 100vw;
+  height: 100vh;
+}
+#caja1 {
+  background-color: green;
+  width: 100%;
+  height: 15vh;
+}
+#caja2 {
+  background-color: red;
+  width: 100%;
+  height: 10vh;
+}
+#caja3 {
+  background-color: yellow;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#caja4 {
+  background-color: rgb(76, 157, 249);
+  width: 100%;
+  height: 10vh;
+}
+#caja5 {
+  background-color: rgb(171, 23, 171);
+  width: 100%;
+  height: 15vh;
+}
+#subContenedor1 {
+  background-color: green;
+  width: 90%;
+  height: 25vh;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#subContenedor2 {
+  background-color: green;
+  width: 90%;
+  height: 25vh;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#subContenedorA {
+  background-color: gray;
+  width: 95%;
+  height: 50%;
+  margin: 8px;
+}
+#subContenedorB {
+  background-color: gray;
+  width: 95%;
+  height: 50%;
+  margin: 8px;
+}
+#subContenedorC {
+  background-color: gray;
+  width: 95%;
+  height: 50%;
+  margin: 8px;
+}
+#subContenedorD {
+  background-color: gray;
+  width: 95%;
+  height: 50%;
+  margin: 8px;
+}
+@media (min-width: 769px) {
+  .contenedor {
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+      "caja1 caja1 caja1 caja1"
+      "caja2 caja2 caja2 caja2"
+      "caja4 caja3 caja3 caja3"
+      "caja4 caja3 caja3 caja3"
+      "caja5 caja5 caja5 caja5";
+  }
+  #caja1 {
+    grid-area: caja1;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #subCaja1 {
+    background-color: yellow;
+    border: solid 5px;
+    border-color: red;
+    width: 8%;
+    height: 60%;
+  }
+  #caja2 {
+    grid-area: caja2;
+    height: 10vh;
+  }
+  #caja3 {
+    grid-area: caja3;
+    display: flex;
+  }
+  #subContenedor1 {
+    display: flex;
+    flex-direction: row;
+  }
+  #subContenedorA {
+    margin-left: 2%;
+    height: 80%;
+  }
+  #subContenedorB {
+    margin-right: 2%;
+    height: 80%;
+  }
+  #subContenedor2 {
+    display: flex;
+    flex-direction: row;
+  }
+  #subContenedorC {
+    margin-left: 2%;
+    height: 80%;
+  }
+  #subContenedorD {
+    margin-right: 2%;
+    height: 80%;
+  }
+  #caja4 {
+    grid-area: caja4;
+    height: 50vh;
+  }
+  #caja5 {
+    grid-area: caja5;
+    height: 20vh;
+  }
+}
